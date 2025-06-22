@@ -1,20 +1,16 @@
 from filter.base import FilterStrategy
-from filter.strategy import (
-    GreaterThanFilter,
-    LessThanFilter,
-    EqualFilter
-)
+from filter.strategy import EqualFilter, GreaterThanFilter, LessThanFilter
 
 
 class FilterFactory:
     @staticmethod
     def create(operator: str) -> FilterStrategy:
         match operator:
-            case '>':
+            case ">":
                 return GreaterThanFilter()
-            case '<':
+            case "<":
                 return LessThanFilter()
-            case '=':
-                return EqualFilter()  
+            case "=":
+                return EqualFilter()
             case _:
                 raise ValueError(f"Unsupported operator: {operator}")

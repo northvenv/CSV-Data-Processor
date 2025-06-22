@@ -1,5 +1,6 @@
+from typing import Dict, List
+
 from aggregation.base import AggregationStrategy
-from typing import List, Dict
 
 
 class AvgAggregation(AggregationStrategy):
