@@ -8,7 +8,7 @@
 poetry init
 poetry install
 poetry shell
-python main.py --file test.csv --where "some conditions" --agg "some conditions"
+python main.py --file products.csv --where "some conditions" --agg "some conditions"
 ```
 
 ## Запуск тестов

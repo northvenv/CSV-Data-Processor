@@ -6,12 +6,21 @@ import pytest
 
 from file_reader import CSVReader, FileReader
 from main import CSVProcessorApp
-from services import ConsolePrinter, DataProcessor, ParserFactory, Printer, Processor
+from services import (
+    ConsolePrinter, 
+    DataProcessor, 
+    ParserFactory, 
+    Printer, 
+    Processor
+)
 
 
 @pytest.fixture
 def sample_data() -> list[dict]:
-    return [{"name": "iPhone", "price": "999"}, {"name": "Galaxy", "price": "899"}]
+    return [
+        {"name": "iPhone", "price": "999"}, 
+        {"name": "Galaxy", "price": "899"}
+    ]
 
 
 @pytest.fixture
