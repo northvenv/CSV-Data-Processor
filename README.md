@@ -14,7 +14,7 @@ python main.py --file products.csv --where "some conditions" --agg "some conditi
 ## Запуск тестов
 
 ```bash
-poetry run pytest -v
+pytest -v
 ```
 
 ## Пример работы
